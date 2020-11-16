@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Vue Hello</title>
+  </head>
+  <body>
+
+   <div id="root">
+
+    <h1> Hello {{ message }} </h1>
+
+    <button v-on:click="show = !show">Discover VUE.js</button>
+    <br>
+    <transition name="fade">
+      <img v-bind:src="logo" v-if="show">
+    </transition>
+
+   </div>
+
+   <script src="js/vue.js" charset="utf-8"></script>
+
+  </body>
+</html>
